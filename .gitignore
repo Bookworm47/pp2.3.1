@@ -1,0 +1,4 @@
+# Project exclude paths
+/pp2.3.1-master/target/
+/.idea/
+/pp2.3.1-master/.idea/
