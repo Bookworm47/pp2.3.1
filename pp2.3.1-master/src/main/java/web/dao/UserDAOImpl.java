@@ -33,10 +33,8 @@ public class UserDAOImpl implements UserDAO {
     }
 
     @Override
-    public void updateUser(Long id, User user) {
-        User updateUser = entityManager.find(User.class, id);
-        updateUser = user;
-        entityManager.merge(updateUser);
+    public void updateUser(User user) {
+        entityManager.merge(user);
     }
 
     @Override
